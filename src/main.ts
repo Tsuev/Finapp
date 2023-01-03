@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router'
 import PrimeVue from 'primevue/config';
 
-// import './assets/main.css'
+import './assets/main.css'
 import 'primeflex/primeflex.css'
 import 'primevue/resources/themes/vela-green/theme.css'
 import 'primevue/resources/primevue.min.css'
