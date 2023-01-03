@@ -25,11 +25,12 @@
 <script setup lang="ts">
 import statistic from '@/components/statistic.vue';
 import Skeleton from 'primevue/skeleton';
+// import type { Statistics } from '@/types/statistics'
 
 import { useStore } from '@/stores/store';
 import { computed, onMounted } from 'vue';
 
 const store = useStore()
 onMounted(() => store.fetchStatistic())
-const statistics = computed(() => store.statisctics)
+const statistics = computed<any>(() => store.statisctics)
 </script>
